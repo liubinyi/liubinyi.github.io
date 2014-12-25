@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" ng-app="Mywebsite">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse" style="position:relative">
+	<header class="header">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand scroll-top" href="#">
+				<img src="image/logo.png" alt="Breakroom logo" class="brand">
+			</a>
+		</div>
+ 
+		<div class="collapse navbar-collapse" id="navbar-collapse-1" ng-controller="navController">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#home" class="scroll-link" data-id="home">Home</a>
+				</li>
+				<li>
+					<a href="#about" class="scroll-link" data-id="about">About</a>
+				</li>
+				<li>
+					<a href="#services" class="scroll-link" data-id="services">Services</a>
+				</li>
+				<li>
+					<a href="#portfolio" class="scroll-link" data-id="portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contact" class="scroll-link" data-id="contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+	</header>
+	
+	<div class="background-container" id="home">
+        <img src="image/2.png" class="backgroundcover" alt="my photo"/>
+        <h1 class="intro col-sm-12 col-md-12"><span class="black">Welc</span><span class="black">o</span>me!
+            <h2 class="test col-sm-12 col-md-12">I'm a
+              <span
+                 class="txt-rotate"
+                 data-period="2000"
+                 data-rotate='[ "Web designer.", "Programmer.", "IOS devolper.", "a Sport fun."]'></span>
+            </h2>
+        </h1>
+    </div>   
+	
+	<!-- About me page -->
+    <div id="about">
+        <div class="container">
+            <h1 class="arrow2 arrow-right">Who I am?</h1>
+            <img src="image/me.jpg" class="cicle-me" alt="Portfolio example">
+             <ul class="list-inline">
+                <li>
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x green"></i></a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com"><i class="fa fa-linkedin fa-2x green"></i> </a>
+                </li>
+                <li>
+                    <a href="http://www.github.com"><i class="fa fa-github fa-2x green"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div href="#" class="arrow arrow-top"> 
+        <div class="info">
+            <div class="container introduceMe">
+                <p id="title">Hi! My name is <span class="black">Binyi Liu</span> </p>
+                <div class="divider"></div>
+                <p id="subtitle"> I'm curently a computer science student.
+                   During my free time i like <span id="important">Coding, Desgin,                                  Startups</span> and <span id="important">Sports!</span></br></p> 
+                    <p id="subtitle"> During my past semesters I've done a lot of programming         project with
+                  <span id="important">Java and python</span> and I'm really enjoy doing them!</p>
+                <p id="subtitle">I'm extremely interested in <span id="important"> Web Design                                    and IOS APP Design </span> and I'm a big fan of creating new things that could have impact on people's life.</p>
+                  <div class="divider2"></div>
+            </div>
+        </div>   
+    </div>
+    
+    
+    <!-- Portfolio page -->
+	<div class="Portfolio" id="services">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class = "col-sm-12">
+                        <h2 class="arrow2 arrow-right">Three major working areas</h2>
+                    </div>
+                     <div class="col-sm-6 col-md-3">
+                        <div class="contentbox">
+                            <i class="fa fa-thumbs-o-up fa-5x"></i>
+                            <h2>Html5/CSS+JS</h2>
+                            
+                             <div class="progress-bar bar-one">
+                                  <div class="progress">
+                                    <span class="field">WEB</span>
+                                    <span class="field-value fade-in">100%</span>
+                                    <div style="width: 100%;" class="bar"></div>
+                                  </div>
+                            </div>
+                            
+                            <p class="titlebox">web design | <em>front-side</em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="contentbox">
+                            <i class="fa fa-mobile fa-5x blue"></i>
+                            <h2>Swift+ObjC</h2>
+                            
+                            <div class="progress-bar bar-two">
+                                <div class="progress">
+                                  <span class="field">APPs</span>
+                                  <span class="field-value fade-in">70%</span>
+                                  <div style="width: 70%;" class="bar"></div>
+                              </div>
+                            </div>
+                            
+                            <p class="titlebox">IOS | <em>APP design</em>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="contentbox">
+                           <i class="fa fa-plug fa-5x red"></i>
+                            <h2>Algorithms!</h2>
+                            
+                            <div class="progress-bar bar-three">
+                              <div class="progress">
+                                <span class="field">Awesome!</span>
+                                <span class="field-value fade-in">65%</span>
+                                  <div style="width: 65%;" class="bar"></div>
+                              </div>
+                            </div>
+                            
+                            <p class="titlebox">Game Design | <em>Java, C</em>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-3">
+                        <div class="contentbox">
+                           <i class="fa fa-pencil fa-5x green2"></i>
+                            <h2>Graphics!</h2>
+                            
+                            <div class="progress-bar bar-three">
+                              <div class="progress">
+                                <span class="field">Math!</span>
+                                <span class="field-value fade-in">50%</span>
+                                  <div style="width: 50%;" class="bar"></div>
+                              </div>
+                            </div>
+                            
+                            <p class="titlebox">Graphics Design | <em>C++, java></em>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+	</div>
+	
+	
+	<div class="attachpicture">
+	    <h1 class="ps">Computerized mind <i class="fa fa-check-circle blue"></i><br>
+	    Creative heart <i class="fa fa-beer green2"></i><br>
+	    Awesome practical ability <i class="fa fa-wrench red"></i></h1>
+	</div>
+	
+	<section class="space" id="portfolio">
+        <div class="container">
+            <div class="row">
+                 <h2 class="arrow2 arrow-right">A lovely Section of works</h2>
+                 <div class ="col-xs-12 col-md-4">
+                    <div class="project">
+                        <img src="image/show1.png" alt="Portfolio example" class="cicle-show">
+                        <a href="https://github.com/liubinyi/cs61c-proj3"><span class="project-title"><span> This is a MapReduce project.<br>
+		I love coding and also found it challenging
+		The best way to code is to code everyday</span></span></a>
+                    </div>
+                </div>
+
+                <div class ="col-xs-12 col-md-4">
+                    <div class="project">
+                        <img src="image/show2.png" alt="Portfolio example" class="cicle-show">
+                        <a href="https://github.com/liubinyi/IOS-project"><span class="project-title"><span>Coding is part of my life </br>
+					   I want to create wonderful Apps<br>
+					   that people can benefit from it</span></span></a>
+                    </div>
+                </div>
+                
+                <div class ="col-xs-12 col-md-4">
+                    <div class="project">
+                        <img src="image/show5.png" alt="Portfolio example" class="cicle-show">
+                        <a href="https://github.com/liubinyi/IOS-project"><span class="project-title"><span>Devloping my personal Website</span></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class ="col-xs-12 col-md-4">
+                    <div class="project">
+                        <img src="image/show3.jpg" alt="Portfolio example" class="cicle-show">
+                        <a href="http://money.cnn.com/data/markets/"><span class="project-title"><span>Stock is a must!<br>
+                   The best way to prove your analysis<br>
+                   AND <br>
+                   Courage!</span></span></a>
+                    </div>
+                </div>
+
+                <div class ="col-xs-12 col-md-4">
+                    <div class="project">
+                        <img src="image/show4.png" alt="Portfolio example" class="cicle-show">
+                        <a href="http://liubinyi.github.io/pages-hw/#/"><span class="project-title"><span>Using a existing boostrap theme as a mockup And using boostrap building a moblie friendly website</span></span></a>
+                    </div>
+                </div>
+                
+                <div class ="col-xs-12 col-md-4">
+                    <div class="project">
+                        <img src="image/show6.png" alt="Portfolio example" class="cicle-show">
+                        <a href="https://github.com/liubinyi/IOS-project"><span class="project-title"><span>Implanmenting KrusKal Algorithm in Java</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <div class="scroll-image" id="contact">
+       <h1 class="plus black">I also know How Semiconductor works! <i class="fa fa-angellist red"></i> Woff!</h1>
+        <div class="overlay"><!-- <p id="title2"> Woff I know how semiconductor works</p>-->  </div>  
+	</div>
+	
+	
+	
+	<footer class="footer page-section">
+		<section class="footer-top blackBackground">
+             <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                   <div>
+                        <h2>Let's have a Chat</h2>
+                        <p id="subtitle">Thank you for interesting in me.<br> Let's have a chat for any purposes!</p>
+                    </div>
+                 </div>
+                  
+                    
+                    
+                    <div class="col-sm-6">
+                        <h2>Contact Info</h2>
+                        <p id="subtitle">bliu1@berkeley.edu
+                            <br>Berkeley</p>
+                        <ul class="list-inline foot">
+                            <li>
+                                <a href="http://www.twitter.com/themearmada"><i class="fa fa-twitter fa-2x green"></i></a>
+
+                            </li>
+                            <li>
+                                <a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x green"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.linkedin.com"> <i class="fa fa-linkedin fa-2x green"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.github.com"><i class="fa fa-github fa-2x green"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</section>
+
+		<section class="">
+             <div class="container">
+                 <div class="divider3"></div>
+                <p>Created by Binyi Liu.</p>
+
+            </div>
+		</section>
+
+	</footer>
+
+	<main class="view" ng-view>
+		<!-- AngularJS partials to be loaded here -->
+	</main>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-animate.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ghost.js"></script>
+</body>
+
+
+</html>
