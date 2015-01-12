@@ -28,7 +28,7 @@ h2 {
 
 /*change the default nav-bar to green*/
 .navbar-default .navbar-nav>li>a {
-    color: #78c272;
+    color: white;
 }
 
 .container {
@@ -46,7 +46,6 @@ img {
    position:relative;
    top:50px;
    margin-right:0px;
-   
 }
 
 /* set image's width*/
@@ -56,10 +55,10 @@ img {
 }
 
 .scroll-image {
-    height:500px;
+    height:500px;/*was 500*/
     width:100%;
     /*position:relative;*/
-    background-image: url(../image/dog.png);
+    background-image: url(../image/dog1.png);
     width:100%;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -228,19 +227,19 @@ img {
 
 /*
 .overlay {
-    background-color:#6392c0;
-    opacity: 0.4;
+    background-color:black;
+    opacity:0.3;
     width:100%;
     height:1400px;
     position:absolute;
-    top:1700px;
+    top:100px;
     z-index:1;
         
 }*/
 
 .footer {
     background-color: black;
-    opacity: 0.6;
+    opacity:0.6;
     padding:30px;
 }
 
@@ -262,7 +261,7 @@ img {
   font-size: 6em;
   position: absolute;
   text-align: center;
-  top:240px;
+  top:200px;
   background-size:cover; 
   color:gray;
   margin-bottom:20px;
@@ -289,7 +288,13 @@ img {
    margin-left: 43%;
    color:#78c272;  
 }
-@media only screen and (min-width:600px) and (max-width: 990px)  {
+@media only screen and (min-width:1000px) and (max-width: 2000px)  {
+    .scroll-image {
+        height:600px;
+    }
+    
+}
+@media only screen and (min-width:650px) and (max-width: 990px)  {
      .mydog {
         height:400px;
     }
@@ -308,16 +313,40 @@ img {
     .project {
         margin-left: 190px;
     }
+    .intro {
+      font-size: 6em;
+      position: absolute;
+      text-align: center;
+      top:250px;
+      background-size:cover; 
+      margin-bottom:20px;
+    }
+    .test {
+     position: absolute;
+     text-align: center;
+     top:360px;
+     background-size:cover;
+     margin-top: 20px; 
+    }
+    .backgroundcover{
+        width:100%;
+        margin-right:0px;
+        height:700px;
+    }
     
     
 }
 
-@media only screen and (min-width:300px) and  (max-width: 600px) {
-  
+@media only screen and (min-width:300px) and  (max-width: 650px) {
+  .backgroundcover{
+        width:100%;
+        margin-right:0px;
+        height:400px;
+    }
   .intro {
     position: absolute;
     font-size: 2.5em;
-    top:70px;
+    top:100px;
     left:24%;
     width:200px;
     background-color: white;
@@ -326,7 +355,7 @@ img {
     .test {
      position: absolute;
      text-align: center;
-     top:120px;
+     top:180px;
      background-size:cover;
      margin-top: 20px; 
      left:15% 
@@ -565,6 +594,10 @@ img {
 .red {
   color:rgba(222, 104, 104, 0.9);  
   opacity: 0.9;
+}
+.white{
+  color:white; 
+  opacity: 1; 
 }
 .blue {
    color:#6392c0 ;
