@@ -290,7 +290,7 @@ img {
 }
 @media only screen and (min-width:1000px) and (max-width: 2000px)  {
     .scroll-image {
-        height:600px;
+        height:650px;
     }
     
 }
